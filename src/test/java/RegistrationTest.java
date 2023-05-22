@@ -111,7 +111,7 @@ public class RegistrationTest {
 
              if (currentUrl.contains("/")) {
             // El usuario está registrado y se ha redirigido a la página de inicio
-            assertEquals("http://localhost:8083", currentUrl);
+            assertEquals("http://localhost:8083/", currentUrl);
         } else {
             fail("Unexpected URL: " + currentUrl);
         }
