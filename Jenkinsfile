@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Load test') {
             steps {
-                 sh 'mvn test'
+                 sh 'mvn test -Dbrowser=chrome'
             }
         }
 
