@@ -13,7 +13,7 @@ pipeline {
                 // Change directory to target
                 dir('target/') {
                     // Run the jar in background and set port to 8081
-                    sh 'java -jar blogapi-0.0.1-SNAPSHOT.jar  &'
+                    sh 'App-de-Prueba.jar  &'
                 }
             }
         }
