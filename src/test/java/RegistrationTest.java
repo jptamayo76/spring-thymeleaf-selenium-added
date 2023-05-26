@@ -70,7 +70,7 @@ public class RegistrationTest {
     @BeforeClass
     public void setUp() {
         // Configura la ubicación del driver de Chrome
-        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/src/test/resources/chromedriver/chromedriver.exe");
         // Inicializa el driver de Chrome
         driver = new ChromeDriver();
         // Navega a la página de registro
