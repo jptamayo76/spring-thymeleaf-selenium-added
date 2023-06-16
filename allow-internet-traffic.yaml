@@ -1,0 +1,12 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-egress-external
+  namespace: default
+spec:
+  podSelector:
+    matchLabels: {}
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
